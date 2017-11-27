@@ -15,4 +15,8 @@ export class DirectivesComponent {
 
     }
   }
+
+  dirCallMe(){
+    alert('this is directive call me')
+  }
 }

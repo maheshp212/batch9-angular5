@@ -7,7 +7,10 @@ import { AppComponent } from './app.component';
 import { VariablesComponent } from './variables/variables.component';
 import { IntroComponent } from './intro/intro.component';
 import {DirectivesComponent} from './directives/directives.component';
-import { FormComponent } from './form/form.component'
+import { FormComponent } from './form/form.component';
+import { AttrDirective } from './attr.directive';
+import { ClasssDirective } from './classs.directive';
+import { ElementdirComponent } from './elementdir/elementdir.component'
 
 const routes:Routes = [
       { path: 'variables', component: VariablesComponent },
@@ -21,7 +24,10 @@ const routes:Routes = [
     VariablesComponent,
     IntroComponent,
     DirectivesComponent,
-    FormComponent
+    FormComponent,
+    AttrDirective,
+    ClasssDirective,
+    ElementdirComponent
   ],
   imports: [
     BrowserModule,

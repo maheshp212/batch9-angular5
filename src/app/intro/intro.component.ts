@@ -12,4 +12,7 @@ export class IntroComponent implements OnInit {
   ngOnInit() {
   }
 
+  introCallMe(){
+    alert('this is intro call me')
+  }
 }
