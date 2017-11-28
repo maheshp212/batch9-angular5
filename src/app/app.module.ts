@@ -10,13 +10,19 @@ import {DirectivesComponent} from './directives/directives.component';
 import { FormComponent } from './form/form.component';
 import { AttrDirective } from './attr.directive';
 import { ClasssDirective } from './classs.directive';
-import { ElementdirComponent } from './elementdir/elementdir.component'
+import { ElementdirComponent } from './elementdir/elementdir.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { PowerPipe } from './power.pipe';
+import { HexaPipe } from './hexa.pipe';
+import { LifcyclesComponent } from './lifcycles/lifcycles.component'
 
 const routes:Routes = [
       { path: 'variables', component: VariablesComponent },
       { path: 'intro', component: IntroComponent },
       { path: 'directives', component: DirectivesComponent },
-      { path: 'form', component: FormComponent}
+      { path: 'form', component: FormComponent},
+      { path: 'pipes', component: PipesComponent}
+      { path: 'lifecycles', component: LifcyclesComponent}
     ];
 @NgModule({
   declarations: [
@@ -27,7 +33,11 @@ const routes:Routes = [
     FormComponent,
     AttrDirective,
     ClasssDirective,
-    ElementdirComponent
+    ElementdirComponent,
+    PipesComponent,
+    PowerPipe,
+    HexaPipe,
+    LifcyclesComponent
   ],
   imports: [
     BrowserModule,
