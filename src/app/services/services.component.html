@@ -1,0 +1,18 @@
+<p>
+  services works!
+</p>
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>email</th>
+    <th>age</th>
+    <th>password</th>
+  </tr>
+  <tr *ngFor="let user of listUsersobj">
+    <td>{{user.fname}} {{user.lname}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.age}}</td>
+    <td>{{user.password}}</td>
+  </tr>
+</table>
